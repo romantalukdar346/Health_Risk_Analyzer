@@ -51,8 +51,7 @@ This web application uses trained machine learning models to predict the likelih
     host="sql6.freesqldatabase.com",
     user="sql6696841",
     password="hdwDjLTAyn",
-    database="sql6696841"
-)
+    database="sql6696841" )
 
 
 5. **Run the application**:
