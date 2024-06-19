@@ -58,8 +58,8 @@ This web application uses trained machine learning models to predict the likelih
    - Before you run it, make sure `static` and `Templates` files are added .
      
 5. **Run the application**:
-   
-   `python app.py`
+   ````sh
+   python app.py
 
 ### Website OverView
 
