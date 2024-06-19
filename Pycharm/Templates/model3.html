@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 3</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='model3.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='all_common.css')}}">
+
+</head>
+
+<body>
+    <header>
+        <h1>Stroke Prediction</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/model" class="dropbtn">Models</a>
+                <div class="dropdown-content">
+                    <a href="/model1">Diabetes Prediction</a>
+                    <a href="/model2">Heart Disease Prediction</a>
+                    <a href="/model3">Stroke Prediction</a>
+                </div>
+            </li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    </br>
+    <div class="container">
+        <h2>Stroke Prediction</h2>
+
+
+        <form action="/model3_result" method="POST">
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="hypertension">Hypertension:</label><br>
+            <select id="hypertension" name="hypertension" required>
+                <option value="1">Yes</option>
+                <option value="0">N0</option>
+            </select><br><br>
+
+            <label for="heart_disease">Heart Disease:</label><br>
+            <select id="heart_disease" name="heart_disease" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="avg_glucose_level">Average Glucose Level:</label>
+            <input type="number" id="avg_glucose_level" name="avg_glucose_level" required><br><br>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+
+            <label for="ever_married">Ever Married:</label><br>
+            <select id="ever_married" name="ever_married" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="work_type">Work Type:</label><br>
+            <select id="work_type" name="work_type" required>
+                <option value="Never work">Never work</option>
+                <option value="Private">Private</option>
+                <option value="Self-employed">Self-employed</option>
+            </select><br><br>
+
+            <label for="residence_type">Residence Type:</label><br>
+            <select id="residence_type" name="residence_type" required>
+                <option value="Urban">Urban</option>
+                <option value="Other">Rural</option>
+            </select><br><br>
+
+            <label for="smoking_status">Smoking Status:</label><br>
+            <select id="smoking_status" name="smoking_status" required>
+                <option value="Never">Never</option>
+                <option value="Always">Always</option>
+                <option value="Few times">Few times</option>
+            </select><br><br>
+
+            <input class='btn' type="submit" value="Submit">
+        </form>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='contact.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='all_common.css')}}">
+
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/model" class="dropbtn">Models</a>
+                <div class="dropdown-content">
+                    <a href="/model1">Diabetes Prediction</a>
+                    <a href="/model2">Heart Disease Prediction</a>
+                    <a href="/model3">Stroke Prediction</a>
+                </div>
+            </li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+</br>
+    <div class="container">
+        <div class="box">
+            <form action="/after_contact" method="POST">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" class="input-box"><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" class="input-box"><br><br>
+
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" placeholder="Enter Your Message" class="input-box" rows="5"></textarea><br><br>
+
+                <button type="submit" class="btn">Submit</button>
+                <p class="success-message" >{{pop}}</p>
+            </form>
+
+        </div>
+
+    </div></br>
+
+    <footer>
+        <div class="container">
+            <div class="address">
+                <h2>Visit Us</h2>
+                <p>123 FRP Health Centre, Dhaka, Bangladesh</p>
+                <a href="https://maps.app.goo.gl/ih1jKe86amZdp4ec9" target="_blank">Get Directions</a>
+            </div>
+        </div></br>
+        <div class="container">
+            <h2>For Quick Response</h2>
+            <p>For inquiries, please contact us:</p>
+            <ul>
+                <li>Call us: <a href="tel:+8801303080103">+880 1303-080103</a></li>
+                <li>Email us: <a href="mailto:nilavrohemu@gmail.com">frp@healthcare.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("form").addEventListener("submit", function (e) {
+                e.preventDefault();
+                document.querySelector(".success-message").style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>

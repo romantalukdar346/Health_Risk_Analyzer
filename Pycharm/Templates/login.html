@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>Analyze Your Health<br>Whether<br>It's in Risk or Not!</h1>
+    </header>
+    <div class="container">
+        <h2>Login to your Account!</h2>
+        <form action="/after_login" method="POST">
+            <div class="inputs">
+                <label>EMAIL</label>
+                <input type="email" name="username" placeholder="example@test.com" />
+                <label>PASSWORD</label>
+                <input type="password" name="password" placeholder="Password" />
+                <button type="submit">LOGIN</button>
+              </div>
+        </form>
+        <p class="success-message" >{{message}}</p>
+        <p class="success-message" >{{pop}}</p>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 2</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='model2.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='all_common.css')}}">
+
+</head>
+
+<body>
+    <header>
+        <h1>Heart Disease (Angiographic) Prediction</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/model" class="dropbtn">Models</a>
+                <div class="dropdown-content">
+                    <a href="/model1">Diabetes Prediction</a>
+                    <a href="/model2">Heart Disease Prediction</a>
+                    <a href="/model3">Stroke Prediction</a>
+                </div>
+            </li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav></br>
+    <div class="container">
+        <h2>Heart Disease(Angiographic) Prediction</h2>
+
+
+        <form action="/model2_result" method="POST">
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="gender_male" name="gender" value="Male" required>
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_female" name="gender" value="Female" required>
+            <label for="gender_female">Female</label><br><br>
+
+            <label for="chest_pain_type">Chest Pain Type:</label><br>
+            <select id="chest_pain_type" name="chest_pain_type" required>
+                <option value="typical angina">Chest pain that happens predictably, often during physical activity or stress, feeling like squeezing or pressure.</option>
+                <option value="atypical angina">Chest pain that doesn't follow a pattern, may not be caused by physical activity</option>
+                <option value="non-anginal pain">Chest discomfort not related to the heart, possibly caused by muscle strain, inflammation, or stomach issues</option>
+                <option value="asymptomatic">No chest pain or discomfort</option>
+            </select><br><br>
+
+            <label for="resting_blood_pressure">Resting Blood Pressure:</label><br>
+            <input type="number" id="resting_blood_pressure" name="resting_blood_pressure" required><br><br>
+
+            <label for="resting_electrocardiogram"> ECG report:</label><br>
+            <select id="resting_electrocardiogram" name="resting_electrocardiogram" required>
+                <option value="normal">Normal</option>
+                <option value="ST-T wave abnormality">Heart's electrical pattern isn't typical</option>
+                <option value="left ventricular hypertrophy">Taller waves, changes in the QRS complex shape, and abnormalities in the ST segment and T wave</option>
+            </select><br><br>
+
+            <label for="st_slope">Slope of ECG:</label><br>
+            <select id="st_slope" name="st_slope" required>
+                <option value="upsloping">Up-sloping</option>
+                <option value="flat">Flat</option>
+                <option value="downsloping">Down-sloping</option>
+            </select><br><br>
+
+            <label for="num_major_vessels">Number of colored vessels detected:</label><br>
+            <select id="num_major_vessels" name="num_major_vessels" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br><br>
+
+            <label for="thalassemia">Genetic disorder causing blood anemia:</label><br>
+            <select id="thalassemia" name="thalassemia" required>
+                <option value="error">Error</option>
+                <option value="fixed defect">Fixed Defect</option>
+                <option value="normal">Normal</option>
+                <option value="reversible defect">Reversible Defect</option>
+            </select><br><br>
+
+            <input class="btn" type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+</html>

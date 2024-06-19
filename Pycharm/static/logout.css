@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; /* Transition background color */
+    background-image: url('logout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+
+}
+
+header {
+    background: linear-gradient(to right, #dd1818, #333333);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition background and text color */
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(239, 253, 224);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    transition: box-shadow 0.5s ease; /* Transition box shadow */
+}
+
+h2 {
+    color: #00afb9;
+    margin-bottom: 30px;
+    transition: color 0.5s ease; /* Transition text color */
+}
+
+
+.btn {
+    background-color: #00afb9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #007d8c;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #00afb9;
+    text-decoration: none;
+    transition: color 0.5s ease; /* Transition text color */
+}
+
+a:hover {
+    text-decoration: none;
+    transition: text-decoration 0.5s ease; /* Transition text decoration */
+}
+

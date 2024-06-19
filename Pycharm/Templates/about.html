@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='all_common.css')}}">
+
+</head>
+
+<body>
+    <header>
+        <h1>About </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+                <a href="/model" class="dropbtn">Models</a>
+                <div class="dropdown-content">
+                    <a href="/model1">Diabetes Prediction</a>
+                    <a href="/model2">Heart Disease Prediction</a>
+                    <a href="/model3">Stroke Prediction</a>
+                </div>
+            </li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    </br>
+    <div class="container">
+        <h2>Our Models</h2>
+        <div class="doctor-box">
+            <div class="doctor">
+                <div class="doctor-details">
+                    <p>Diabetes Prediction:</p>
+                    <div class="container">Our Diabetes Prediction model is meticulously crafted to provide accurate insights into the likelihood of diabetes onset.
+                        Leveraging cutting-edge techniques such as missing value handling, outlier detection and handling, and extensive exploratory
+                        data analysis (EDA), we've engineered a robust solution. Through rigorous model training and hyperparameter tuning, we've honed
+                        the predictive power of our algorithm. Selecting the best model architecture, we've achieved an impressive accuracy of 94.5%. With
+                        our model, individuals can proactively assess their risk of diabetes and take proactive steps towards prevention and management.</div>
+                </div>
+            </div>
+        </div>
+        <div class="doctor-box">
+            <div class="doctor">
+                <div class="doctor-details">
+                    <p>Heart Disease:</p>
+                    <div class="container">Our Heart Disease Prediction model is designed to empower individuals with insights into their cardiovascular health. Employing advanced methodologies including missing value handling, outlier detection and handling, and thorough exploratory data analysis (EDA), we've developed a reliable tool. Through rigorous model training and hyperparameter tuning, we've optimized our algorithm for accuracy. Our efforts have resulted in a commendable accuracy rate of 88.52%. With our model, users can assess their risk of heart disease and make informed decisions to prioritize their cardiac well-being.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="doctor-box">
+            <div class="doctor">
+                <div class="doctor-details">
+                    <p>Stroke Prediction:</p>
+                    <div class="container">With our Stroke Prediction model, we offer a sophisticated approach to assess the risk of stroke occurrence. Utilizing a comprehensive range of techniques such as missing value handling, outlier detection and handling, and in-depth exploratory data analysis (EDA), we've crafted a robust solution. Through meticulous model training and hyperparameter tuning, we've fine-tuned our algorithm for optimal performance. As a result, our model boasts an impressive accuracy rate of 96.2%. By leveraging our model, individuals can gain valuable insights into their stroke risk and take proactive measures to safeguard their health.</div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more doctors as needed -->
+    </div></br>
+    <footer>
+        <div class="container2">
+
+            <div class="model-container">
+                <p class="model-description">Diabetes Prediction Model Accuracy</p>
+                <div class="nested-div">
+            <!-- Nested content for the Diabetes Prediction Model -->
+                    <p>94.5%</p>
+                </div>
+            </div>
+
+            <div class="model-container">
+                <p class="model-description">Heart Disease Prediction Model Accuracy</p>
+                <div class="nested-div">
+                    <!-- Nested content for the Heart Disease Prediction Model -->
+                    <p>88.52%</p>
+                </div>
+            </div>
+
+            <div class="model-container">
+                <p class="model-description">Stroke Prediction Model Accuracy</p>
+                <div class="nested-div">
+                    <!-- Nested content for the Stroke Prediction Model -->
+                    <p>96.2%</p>
+                </div>
+            </div>
+
+        </div>
+        </br>
+
+    </footer>
+</body>
+</html>

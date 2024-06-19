@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='register.css')}}">
+</head>
+
+<body>
+    <header>
+        <h1>Sign Up!<br>To Analyze<br>Your Health Risk</h1>
+    </header>
+    <div class="container">
+        <h2>SignUp!</h2>
+        <form action="/after_register" method="POST" id="registrationForm">
+            <label>EMAIL</label>
+            <input type="email" name='username' placeholder="example@test.com" />
+            <label>PASSWORD</label>
+            <input type="password" name='password' placeholder="Min 6 charaters long" />
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <p class="success-message" >{{pop}}</p>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+
+
+</body>
+</html>

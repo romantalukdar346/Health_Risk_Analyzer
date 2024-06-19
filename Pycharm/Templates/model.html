@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='all_common.css')}}">
+
+</head>
+<body>
+    <header>
+        <h1>Models</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/model">Models</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="boxx">
+            <h2>Choose a Model</h2>
+            <div class="model-options">
+                <a href="/model1" class=" model1"><div class="box1  model1">Diabetes Prediction</div></a>
+                <a href="/model2" class=" model2"><div class="box2 model2">Heart Disease Prediction</div></a>
+                <a href="/model3" class=" model3"><div class="box3 model3">Stroke Prediction</div></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
