@@ -72,19 +72,19 @@ This web application uses trained machine learning models to predict the likelih
 
 
 ### Usage
-1. **Access the application:**
+1. #### Access the application:
  - Open your browser and navigate to `http://localhost:5000`
 
-2. **Navigate through the application:**
+2. #### Navigate through the application:
 
-   - Home: `http://localhost:5000/`
+- Home: `http://localhost:5000/`
 - About: `http://localhost:5000/about`
 - Contact: `http://localhost:5000/contact`
 - Model Selection: `http://localhost:5000/model`
 - Login: `http://localhost:5000/login`
 - Register: `http://localhost:5000/register`
 
-3. **Model Predictions:**
+3. #### Model Predictions:
 
   - Diabetes Prediction: Fill out the form at `http://localhost:5000/model1 and submit to get results`.
   - Heart Disease Prediction: Fill out the form at `http://localhost:5000/model2 and submit to get results`.
