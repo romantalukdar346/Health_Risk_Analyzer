@@ -73,7 +73,7 @@ This web application uses trained machine learning models to predict the likelih
 
 ### Usage
 1. **Access the application:**
-- Open your browser and navigate to `http://localhost:5000`
+ - Open your browser and navigate to `http://localhost:5000`
 
 2. **Navigate through the application:**
 
