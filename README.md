@@ -37,18 +37,18 @@ This web application uses trained machine learning models to predict the likelih
    cd Health_Risk_Analyzer
    
 2. **Create and activate a virtual environment**:
-   
-  python -m venv venv
-  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. **Install dependencies**:
-   
-  pip install -r requirements.txt
+   ```sh
+   pip install -r requirements.txt
 
 4. **Configure the MySQL database**:
    
-   Ensure your MySQL server is running and accessible. Update the database configuration in `app.py` if necessary:
-
+   - Ensure your MySQL server is running and accessible. Update the database configuration in `app.py` if necessary:
+   ```sh
    db = mysql.connector.connect(
     host="sql6.freesqldatabase.com",
     user="sql6696841",
@@ -75,7 +75,7 @@ This web application uses trained machine learning models to predict the likelih
 
 **Usage**
 1. **Access the application:**
-  Open your browser and navigate to `http://localhost:5000`
+  - Open your browser and navigate to `http://localhost:5000`
 
 2. **Navigate through the application:**
 
