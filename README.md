@@ -71,11 +71,11 @@ This web application uses trained machine learning models to predict the likelih
 ![Alt Image](https://github.com/romantalukdar346/Health_Risk_Analyzer/blob/main/Image/Picture8.png)
 
 
-**Usage**
+### Usage
 1. **Access the application:**
    - Open your browser and navigate to `http://localhost:5000`
 
-2. ***Navigate through the application:
+2. **Navigate through the application:**
 
    - Home: `http://localhost:5000/`
    - About: `http://localhost:5000/about`
