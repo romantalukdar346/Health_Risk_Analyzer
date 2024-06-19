@@ -77,7 +77,7 @@ This web application uses trained machine learning models to predict the likelih
 
 2. **Navigate through the application:**
 
-   - Home: `http://localhost:5000/`
+- Home: `http://localhost:5000/`
    - About: `http://localhost:5000/about`
    - Contact: `http://localhost:5000/contact`
    - Model Selection: `http://localhost:5000/model`
