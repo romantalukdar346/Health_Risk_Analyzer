@@ -8,8 +8,6 @@ This is a Flask-based web application for predicting diabetes, heart disease, an
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -75,22 +73,22 @@ This web application uses trained machine learning models to predict the likelih
 
 **Usage**
 1. **Access the application:**
-  - Open your browser and navigate to `http://localhost:5000`
+   - Open your browser and navigate to `http://localhost:5000`
 
 2. **Navigate through the application:**
 
-  Home: `http://localhost:5000/`
-  About: `http://localhost:5000/about`
-  Contact: `http://localhost:5000/contact`
-  Model Selection: `http://localhost:5000/model`
-  Login: `http://localhost:5000/login`
-  Register: `http://localhost:5000/register`
+   - Home: `http://localhost:5000/`
+   - About: `http://localhost:5000/about`
+   - Contact: `http://localhost:5000/contact`
+   - Model Selection: `http://localhost:5000/model`
+   - Login: `http://localhost:5000/login`
+   - Register: `http://localhost:5000/register`
 
 3. **Model Predictions:**
 
-  Diabetes Prediction: Fill out the form at `http://localhost:5000/model1 and submit to get results`.
-  Heart Disease Prediction: Fill out the form at `http://localhost:5000/model2 and submit to get results`.
-  Heart Stroke Prediction: Fill out the form at `http://localhost:5000/model3 and submit to get results`.
+  - Diabetes Prediction: Fill out the form at `http://localhost:5000/model1 and submit to get results`.
+  - Heart Disease Prediction: Fill out the form at `http://localhost:5000/model2 and submit to get results`.
+  - Heart Stroke Prediction: Fill out the form at `http://localhost:5000/model3 and submit to get results`.
 
 
 
