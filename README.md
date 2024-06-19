@@ -54,7 +54,9 @@ This web application uses trained machine learning models to predict the likelih
     password="hdwDjLTAyn",
     database="sql6696841" )
 
-
+5. **Add html and CSS file**:
+- Before you run it, make sure `static` and `Templates` files are added .
+     
 5. **Run the application**:
    
    `python app.py`
