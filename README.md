@@ -46,6 +46,7 @@ This web application uses trained machine learning models to predict the likelih
 4. **Configure the MySQL database**:
    
    - Ensure your MySQL server is running and accessible. Update the database configuration in `app.py` if necessary:
+     
    ```sh
    db = mysql.connector.connect(
     host="sql6.freesqldatabase.com",
